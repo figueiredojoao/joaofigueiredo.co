@@ -48,7 +48,7 @@ html {
 
 @media only screen and (max-width:1023px) {
 html {
-	font-size: 1em;
+	font-size: 0.9em;
 }
 }
 
@@ -58,9 +58,9 @@ html {
 }
 }
 
-@media only screen and (max-width:479px) {
+@media only screen and (max-width:719px) {
 html {
-	font-size: 0.6em;
+	font-size: 0.7em;
 }
 }
 
@@ -69,8 +69,8 @@ html, body {
 }
 
 body {
-	background: #FCFCFB;
-	color: #212121;
+	background: #f0f4f5;
+	color: #191919;
 	margin: 0;
 	padding: 0;
 }
@@ -78,18 +78,37 @@ body {
 /* -------------------------------------------------------------------
  * links - (_document-setup)
  * ------------------------------------------------------------------- */
+
 a, a:visited {
-	color: #212121;
-	-moz-transition: all 0.3s ease-in-out;
-	-o-transition: all 0.3s ease-in-out;
-	-webkit-transition: all 0.3s ease-in-out;
-	-ms-transition: all 0.3s ease-in-out;
-	transition: all 0.3s ease-in-out;
+	color: transparent;
+	-webkit-text-stroke-width: 1px;
+	-webkit-text-stroke-color: #191919;
+	text-transform: lower;
+	white-space: nowrap;
+	padding: 10px;
+	background-color: transparent;
+	border-radius: 8px;
 	cursor: pointer;
+	transition: color .20s ease-in;
+	 -moz-transition: color .20s ease-in;
+	 -webkit-transition: color .20s ease-in;
+	transition: border-bottom .20s ease-in;
+	 -moz-transition: border-bottom .20s ease-in;
+	 -webkit-transition: border-bottom .20s ease-in;
+}
+
+.navbar-link:hover {
+	color: var(--color-scheme-text-link-colour);
+	background-color: var(--color-scheme-text-link-highlight-colour);
+}
+  
+#active {
+	color: var(--color-scheme-text-link-colour);
+	background-color: var(--color-scheme-text-link-highlight-colour);
 }
 
 a:hover, a:focus {
-	color: #d6d6d6;
+	color: #191919;
 }
 
 /* ===================================================================
@@ -113,166 +132,18 @@ a:hover, a:focus {
 	margin-top: 100px;
 }
 
-.col-five h4 {
-	font-family: 'Open Sans', sans-serif;
-	font-weight: 700;
-	font-size: 1.5em;
-	letter-spacing: -1px;
-	margin-right: 30px;
-	margin-bottom: 50px;
-}
-
-.col-five h5 {
-	font-family: 'Open Sans', sans-serif;
-	font-weight: 400;
-	font-size: 1em;
-	letter-spacing: -1px;
-	margin-bottom: 50px;
-}
-
 .home-content-tablecell .home-section-links li, .home-content-tablecell .home-section-links a {
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 700;
 	margin-right: 30px;
 }
 
-.col-five table {
-	margin-top: 100px;
-	margin-bottom: 90px;
-	text-align: left;
-	vertical-align: baseline;
-}
-
-p img {
-	margin: 0;
-}
-
-p.lead {
-	font-size: 2rem;
-	line-height: 1.8;
-	color: #212121;
-	margin-bottom: 3.6rem;
-}
-
-@media only screen and (max-width:768px) {
-p.lead {
-	font-size: 1.8rem;
-}
-
-}
-table strong{
-	font-size: 16px;
-	color: #212121;
-}
-
-em, i {
-}
-strong, b {
-}
-
-small {
-	font-size: 1.1rem;
-	line-height: inherit;
-}
-
-blockquote {
-	margin: 3rem 0;
-	padding-left: 5rem;
-	position: relative;
-}
-
-blockquote:before {
-	content: "\201C";
-	font-size: 10rem;
-	line-height: 0px;
-	margin: 0;
-	color: #212121;
-	position: absolute;
-	top: 3.6rem;
-	left: 0;
-}
-
-blockquote p {
-	font-style: italic;
-	padding: 0;
-	font-size: 1.9rem;
-	line-height: 1.895;
-}
-
-blockquote cite {
-	display: block;
-	font-size: 1.3rem;
-	font-style: normal;
-	line-height: 1.615;
-}
-
-blockquote cite:before {
-	content: "\2014 \0020";
-}
-
-blockquote cite a,
-blockquote cite a:visited {
-	color: #ffffff;
-	border: none;
-}
-
-abbr {
-	font-variant: small-caps;
-	text-transform: lowercase;
-	letter-spacing: .05rem;
-	color: #ffffff;
-}
-
-var, kbd, samp, code, pre {
-}
-
-pre {
-	padding: 2.4rem 3rem 3rem;
-	background: #f8f8f8;
-}
-
-code {
-	font-size: 1.4rem;
-	margin: 0 .2rem;
-	padding: .3rem .6rem;
-	white-space: nowrap;
-	background: #f8f8f8;
-	border: 1px solid #ffffff;
-	border-radius: 3px;
-}
-
-pre > code {
-	display: block;
-	white-space: pre;
-	line-height: 2;
-	padding: 0;
-	margin: 0;
-}
-
-pre.prettyprint > code {
-	border: none;
-}
-
-del {
-	text-decoration: line-through;
-}
-
-abbr[title],
-dfn[title] {
-	border-bottom: 1px dotted;
-	cursor: help;
-}
-
-mark {
-	background: #f8f8f8;
-	color: #000;
-}
-
 /* -------------------------------------------------------------------
  * responsive:
  * home section
  * ------------------------------------------------------------------- */
- @media only screen and (max-width:1023px) {
+
+@media only screen and (max-width:1023px) {
 .home-content-tablecell h1 {
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 700;
@@ -291,40 +162,10 @@ mark {
 	margin-top: 90px;
 }
 
-.col-five h4 {
-	font-family: 'Open Sans', sans-serif;
-	font-weight: 700;
-	font-size: 1.5em;
-	line-height: 1.15em;
-	letter-spacing: -1px;
-	margin-right: 30px;
-	margin-bottom: 50px;
-}
-
-.col-five h5 {
-	font-family: 'Open Sans', sans-serif;
-	font-weight: 400;
-	font-size: 1em;
-	letter-spacing: -1px;
-	vertical-align: bottom;
-	margin-bottom: 50px;
-}
-
 .home-content-tablecell .home-section-links li, .home-content-tablecell .home-section-links a {
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 700;
 	margin-right: 25px;
-}
-
-.col-five table {
-	margin-top: 90px;
-	margin-bottom: 80px;
-	text-align: left;
-	vertical-align: bottom;
-}
-
-.scroll-icon {
-	right: 20px;
 }
 }
 	
@@ -347,38 +188,36 @@ mark {
 	margin-top: 80px;
 }
 
-.col-five h4 {
+.home-content-tablecell .home-section-links li, .home-content-tablecell .home-section-links a {
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 700;
-	font-size: 1.5em;
-	letter-spacing: -1px;
-	margin-right: 30px;
-	margin-bottom: 30px;
+	margin-right: 20px;
+}
 }
 
-.col-five h5 {
+@media only screen and (max-width:719px) {
+.home-content-tablecell h1 {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 700;
+	font-size: 4.5em;
+	line-height: 1.15em;
+	letter-spacing: -4px;
+	margin-top: 80px;
+}
+	
+.col-twelve h2 {
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 400;
-	font-size: 1em;
-	letter-spacing: -1px;
-	margin-bottom: 30px;
+	font-size: 3.5em;
+	line-height: 1.15em;
+	letter-spacing: -2px;
+	margin-top: 80px;
 }
 
 .home-content-tablecell .home-section-links li, .home-content-tablecell .home-section-links a {
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 700;
 	margin-right: 20px;
-}
-
-.col-five table {
-	margin-top: 80px;
-	margin-bottom: 70px;
-	text-align: left;
-	vertical-align: bottom;
-}
-
-.scroll-icon {
-	right: 20px;
 }
 }
 
@@ -434,11 +273,6 @@ ul.disc li::before {
 	left: 0px;
 	top: 11px;
 	vertical-align: middle;
-}
-
-dt {
-	margin: 0;
-	color: #6748d9;
 }
 
 dd {
@@ -843,4 +677,3 @@ a.underline-effect:hover:after {
 	-webkit-transform: translateY(20px);
 }
 }
-
