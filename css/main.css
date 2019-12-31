@@ -64,6 +64,12 @@ html {
 }
 }
 
+@media only screen and (max-width:479px) {
+	html {
+		font-size: 1em;
+	}
+	}
+
 html, body {
 	height: 100%;
 }
@@ -199,6 +205,32 @@ a:hover, a:focus {
 	margin-top: 80px;
 }
 
+.home-content-tablecell .home-section-links li, .home-content-tablecell .home-section-links a {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 700;
+	margin-right: 20px;
+}
+}
+
+@media only screen and (max-width:480px) {
+	.home-content-tablecell h1 {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 700;
+	font-size: 3.1em;
+	line-height: 1.15em;
+	letter-spacing: -2px;
+	margin-top: 80px;
+}
+		
+.col-twelve h2 {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 500;
+	font-size: 3.1em;
+	line-height: 1.15em;
+	letter-spacing: -2px;
+	margin-top: 80px;
+}
+	
 .home-content-tablecell .home-section-links li, .home-content-tablecell .home-section-links a {
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 700;
