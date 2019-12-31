@@ -11,20 +11,8 @@
  * =================================================================== */
 
 /* ===================================================================
- *  01. webfonts and iconfonts - (_document-setup)
+ *  01. webfonts and iconfonts
  * ------------------------------------------------------------------- */
-@font-face {
-	font-family: helveticaneue;
-	src: url('HelveticaNeueLTStd-UltLt.otf');
-}
-
-@font-face {
-    font-family: "OpenSans-Bold";
-    src: url(fonts/OpenSans-Bold.ttf);
-    font-weight: normal;
-	font-style: normal;
-}
-
 @font-face {
 	font-family: 'OpenSans-Bold';
 	src: url('OpenSans-Bold.eot');
@@ -36,10 +24,8 @@
 	font-style: normal;
 	}
 
-
 /* ===================================================================
- *  02. base style overrides - (_document-setup)
- *
+ *  02. base style overrides
  * ------------------------------------------------------------------- */
 html {
 	font-size: 1em;
@@ -64,7 +50,7 @@ html {
 }
 }
 
-@media only screen and (max-width:479px) {
+@media only screen and (max-width:359px) {
 	html {
 		font-size: 1em;
 	}
@@ -138,7 +124,7 @@ a:hover, a:focus {
 .home-content-tablecell h1 {
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 700;
-	font-size: 3.7em;
+	font-size: 3.6em;
 	line-height: 1.15em;
 	letter-spacing: -3px;
 	margin-top: 90px;
@@ -147,7 +133,7 @@ a:hover, a:focus {
 .col-twelve h2 {
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 400;
-	font-size: 3.7em;
+	font-size: 3.6em;
 	line-height: 1.15em;
 	letter-spacing: -3px;
 	margin-top: 90px;
@@ -164,7 +150,7 @@ a:hover, a:focus {
 .home-content-tablecell h1 {
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 700;
-	font-size: 3.4em;
+	font-size: 3.2em;
 	line-height: 1.15em;
 	letter-spacing: -2px;
 	margin-top: 85px;
@@ -173,7 +159,7 @@ a:hover, a:focus {
 .col-twelve h2 {
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 400;
-	font-size: 3.4em;
+	font-size: 3.2em;
 	line-height: 1.15em;
 	letter-spacing: -2px;
 	margin-top: 85px;
@@ -190,7 +176,7 @@ a:hover, a:focus {
 .home-content-tablecell h1 {
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 700;
-	font-size: 3.1em;
+	font-size: 2.8em;
 	line-height: 1.15em;
 	letter-spacing: -2px;
 	margin-top: 80px;
@@ -199,7 +185,7 @@ a:hover, a:focus {
 .col-twelve h2 {
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 500;
-	font-size: 3.1em;
+	font-size: 2.8em;
 	line-height: 1.15em;
 	letter-spacing: -2px;
 	margin-top: 80px;
@@ -212,11 +198,11 @@ a:hover, a:focus {
 }
 }
 
-@media only screen and (max-width:480px) {
+@media only screen and (max-width:359px) {
 	.home-content-tablecell h1 {
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 700;
-	font-size: 3.1em;
+	font-size: 2.8em;
 	line-height: 1.15em;
 	letter-spacing: -2px;
 	margin-top: 80px;
@@ -225,7 +211,7 @@ a:hover, a:focus {
 .col-twelve h2 {
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 500;
-	font-size: 3.1em;
+	font-size: 2.8em;
 	line-height: 1.15em;
 	letter-spacing: -2px;
 	margin-top: 80px;
@@ -236,64 +222,6 @@ a:hover, a:focus {
 	font-weight: 700;
 	margin-right: 20px;
 }
-}
-
-/* -------------------------------------------------------------------
- * Lists - (_document-setup.scss)
- * ------------------------------------------------------------------- */
-ol {
-	list-style: decimal;
-}
-
-ul {
-	list-style: disc;
-}
-
-li {
-	display: list-item;
-	font-size: 0.25em;
-}
-
-ol, ul {
-	margin-left: 0px;
-	margin-right: 0px;
-}
-
-ul li {
-	font-family: 'Open Sans', sans-serif;
-	font-weight: 400;
-	font-size: 0.25em;
-	margin-right: 50px;
-	margin-top: 0px;
-	scroll-margin-bottom: 40px;
-}
-
-ul ul, ul ol, ol ol, ol ul {
-	margin: .6rem 0 .6rem 1.7rem;
-}
-
-ul.disc li {
-	display: list-item;
-	list-style: none;
-	padding: 0 0 0 .8rem;
-	position: relative;
-}
-
-ul.disc li::before {
-	content: "";
-	display: inline-block;
-	width: 8px;
-	height: 8px;
-	border-radius: 50%;
-	background: #f8f8f8;
-	position: absolute;
-	left: 0px;
-	top: 11px;
-	vertical-align: middle;
-}
-
-dd {
-	margin: 0 0 0 2rem;
 }
 
 /* -------------------------------------------------------------------
@@ -326,48 +254,8 @@ form,
 }
 
 /* -------------------------------------------------------------------
- * floated image - (_document-setup)
- * ------------------------------------------------------------------- */
-img.pull-right {
-	margin: 1.5rem 0 0 3rem;
-}
-
-img.pull-left {
-	margin: 1.5rem 3rem 0 0;
-}
-
-/* -------------------------------------------------------------------
- * block grids paddings
- * ------------------------------------------------------------------- */
-.bgrid {
-	padding: 80px;
-}
-
-@media only screen and (max-width:1023px) {
-.bgrid {
-	padding: 0 18px;
-}
-}
-
-@media only screen and (max-width:768px) {
-.bgrid {
-	padding: 0 15px;
-}
-}
-
-@media only screen and (max-width:479px) {
-.bgrid {
-	padding: 0 10px;
-}
-}
-
-/* -------------------------------------------------------------------
  * tables - (_document-setup.scss)
  * ------------------------------------------------------------------- */
-
-
-
-
 .table-responsive {
 	overflow-x: auto;
 	-webkit-overflow-scrolling: touch;
@@ -435,24 +323,6 @@ img.pull-left {
  * responsive:
  * section-intro
  * ------------------------------------------------------------------- */
-@media only screen and (max-width:1023px) {
-.section-intro h1 {
-	font-size: 0px;
-}
-}
-
-@media only screen and (max-width:767px) {
-.section-intro h1 {
-	font-size: 0px;
-}
-}
-
-@media only screen and (max-width:479px) {
-.section-intro h1 {
-	font-size: 0px;
-}
-}
-
 .wide {
 	max-width: 1300px;
 }
@@ -477,7 +347,7 @@ img.pull-left {
 }
 
 /* ===================================================================
- *  08. header styles - (_layout.scss)
+ *  08. header styles
  * ------------------------------------------------------------------- */
 header {
 	width: 100%;
@@ -537,11 +407,11 @@ header .header-logo {
 header .header-logo a {
 	width: 54px;
 	height: 54px;
-	background-size: 54px 54px;
+	background-size: 54px;
 }
 }
 
-@media only screen and (max-width:400px) {
+@media only screen and (max-width:359px) {
 #header-menu-trigger .header-menu-text {
 	display: none;
 }
