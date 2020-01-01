@@ -61,20 +61,20 @@ html, body {
 }
 
 body {
-	background: #fafafa;
-	color: #3d3d3d;
+	background: #fcfcfc;
+	color: #202124;
 	margin: 0;
 	padding: 0;
 }
 
 /* -------------------------------------------------------------------
- * links - (_document-setup)
+ * links
  * ------------------------------------------------------------------- */
 
 a, a:visited {
 	color: transparent;
 	-webkit-text-stroke-width: 1px;
-	-webkit-text-stroke-color: #3d3d3d;
+	-webkit-text-stroke-color: #202124;
 	text-transform: lower;
 	white-space: nowrap;
 	background-color: transparent;
@@ -85,7 +85,7 @@ a, a:visited {
 }
 
 a:hover, a:focus {
-	color: #3d3d3d;
+	color: #202124;
 }
 
 /* ===================================================================
@@ -94,18 +94,18 @@ a:hover, a:focus {
 .home-content-tablecell h1 {
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 700;
-	font-size: 4em;
-	line-height: 1.15em;
-	letter-spacing: -3px;
+	font-size: 3.8em;
+	line-height: 1.2em;
+	letter-spacing: -2px;
 	margin-top: 100px;
 }
 
 .col-twelve h2 {
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 500;
-	font-size: 4em;
-	line-height: 1.15em;
-	letter-spacing: -3px;
+	font-size: 3.8em;
+	line-height: 1.2em;
+	letter-spacing: -2px;
 	margin-top: 100px;
 }
 
@@ -115,27 +115,22 @@ a:hover, a:focus {
 	margin-right: 35px;
 }
 
-/* -------------------------------------------------------------------
- * responsive:
- * home section
- * ------------------------------------------------------------------- */
-
 @media only screen and (max-width:1023px) {
 .home-content-tablecell h1 {
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 700;
-	font-size: 3.6em;
-	line-height: 1.15em;
-	letter-spacing: -3px;
+	font-size: 3.4em;
+	line-height: 1.2em;
+	letter-spacing: -2px;
 	margin-top: 90px;
 }
 
 .col-twelve h2 {
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 400;
-	font-size: 3.6em;
-	line-height: 1.15em;
-	letter-spacing: -3px;
+	font-size: 3.4em;
+	line-height: 1.2em;
+	letter-spacing: -2px;
 	margin-top: 90px;
 }
 
@@ -145,30 +140,30 @@ a:hover, a:focus {
 	margin-right: 30px;
 }
 }
-	
+
 @media only screen and (max-width:767px) {
 .home-content-tablecell h1 {
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 700;
 	font-size: 3em;
-	line-height: 1.15em;
+	line-height: 1.2em;
 	letter-spacing: -2px;
-	margin-top: 85px;
+	margin-top: 80px;
 }
-
+	
 .col-twelve h2 {
 	font-family: 'Open Sans', sans-serif;
-	font-weight: 400;
+	font-weight: 500;
 	font-size: 3em;
-	line-height: 1.15em;
+	line-height: 1.2em;
 	letter-spacing: -2px;
-	margin-top: 85px;
+	margin-top: 80px;
 }
 
 .home-content-tablecell .home-section-links li, .home-content-tablecell .home-section-links a {
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 700;
-	margin-right: 25px;
+	margin-right: 20px;
 }
 }
 
@@ -177,16 +172,16 @@ a:hover, a:focus {
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 700;
 	font-size: 2.6em;
-	line-height: 1.15em;
+	line-height: 1.2em;
 	letter-spacing: -2px;
 	margin-top: 80px;
 }
-	
+
 .col-twelve h2 {
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 500;
 	font-size: 2.6em;
-	line-height: 1.15em;
+	line-height: 1.2em;
 	letter-spacing: -2px;
 	margin-top: 80px;
 }
@@ -199,7 +194,7 @@ a:hover, a:focus {
 }
 
 /* -------------------------------------------------------------------
- * Spacing - (_document-setup)
+ * Spacing
  * ------------------------------------------------------------------- */
 button,
 .button {
@@ -227,57 +222,9 @@ form,
 	margin-bottom: 0rem;
 }
 
-/* -------------------------------------------------------------------
- * tables - (_document-setup.scss)
- * ------------------------------------------------------------------- */
 .table-responsive {
 	overflow-x: auto;
 	-webkit-overflow-scrolling: touch;
-}
-
-/* -------------------------------------------------------------------
- * pace.js styles - minimal  - (_document-setup.scss)
- * ------------------------------------------------------------------- */
-.pace {
-	-webkit-pointer-events: none;
-	pointer-events: none;
-	-webkit-user-select: none;
-	-moz-user-select: none;
-	user-select: none;
-}
-
-.pace-inactive {
-	display: none;
-}
-
-.pace .pace-progress {
-	background: #f8f8f8;
-	position: fixed;
-	z-index: 900;
-	top: 0;
-	right: 100%;
-	width: 100%;
-	height: 6px;
-}
-
-/* ===================================================================
- *  04. preloader - (_preloader-1.scss)
- * ------------------------------------------------------------------- */
-#preloader {
-	position: fixed;
-	top: 0;
-	left: 0;
-	right: 0;
-	bottom: 0;
-	background: #f8f8f8;
-	z-index: 800;
-	height: 100%;
-	width: 100%;
-}
-
-.no-js #preloader,
-.oldie #preloader {
-	display: none;
 }
 
 /* ===================================================================
@@ -293,10 +240,6 @@ form,
 	position: relative;
 }
 
-/* -------------------------------------------------------------------
- * responsive:
- * section-intro
- * ------------------------------------------------------------------- */
 .wide {
 	max-width: 1300px;
 }
@@ -311,7 +254,7 @@ form,
 }
 
 .animate-intro #spNU{
-	color:#FFFFFF
+	color:#202124;
 }
 .oldie .animate-this,
 .oldie .animate-intro
@@ -321,85 +264,14 @@ form,
 }
 
 /* ===================================================================
- *  08. header styles
- * ------------------------------------------------------------------- */
-header {
-	width: 100%;
-	height: auto;
-	position: absolute;
-	left: 0;
-	top: 0;
-	z-index: 700;
-}
-
-header .row {
-	height: auto;
-	max-width: 1300px;
-	position: relative;
-}
-
-/* -------------------------------------------------------------------
- * header logo - (_layout.css)
- * ------------------------------------------------------------------- */
-header .header-logo {
-	position: absolute;
-	left: 26px;
-	top: 30px;
-	-moz-transition: all 1s ease-in-out;
-	-o-transition: all 1s ease-in-out;
-	-webkit-transition: all 1s ease-in-out;
-	-ms-transition: all 1s ease-in-out;
-	transition: all 1s ease-in-out;
-}
-
-header .header-logo a {
-	display: block;
-	margin: 0;
-	padding: 0;
-	outline: 0;
-	border: none;
-	width: 60px;
-	height: 60px;
-	text-shadow: none;
-	color: #ffffff;
-	-moz-transition: all 0.5s ease-in-out;
-	-o-transition: all 0.5s ease-in-out;
-	-webkit-transition: all 0.5s ease-in-out;
-	-ms-transition: all 0.5s ease-in-out;
-	transition: all 0.5s ease-in-out;
-}
-
-/* -------------------------------------------------------------------
- * responsive:
- * header section
- * ------------------------------------------------------------------- */
-@media only screen and (max-width:768px) {
-header .header-logo {
-	top: 50px;
-}
-
-header .header-logo a {
-	width: 54px;
-	height: 54px;
-	background-size: 54px;
-}
-}
-
-@media only screen and (max-width:359px) {
-#header-menu-trigger .header-menu-text {
-	display: none;
-}
-}
-
-/* ===================================================================
- *  09. home - (_layout.scss)
+ *  09. home
  * ------------------------------------------------------------------- */
 #home {
 
-	background: #f8f8f8;
+	background: #fafafa;
 	width: 100%;
 	height: 100%;
-	background: #f8f8f8;
+	background: #fcfcfc;
 	min-height: 804px;
 	position: relative;
     -webkit-transition:background-position .7s ease-in;
@@ -444,11 +316,11 @@ header .header-logo a {
 
 span.white-text-intro{
 	display: block;
-	color: #221122;
+	color: #202124;
 }
 
 span.white-text{
-	color: #212121;
+	color: #202124;
 }
 
 .home-content-tablecell .home-section-links {
@@ -459,7 +331,7 @@ span.white-text{
 .home-content-tablecell .home-section-links li {
 	display: inline-block;
 	font-size: 1em;
-	color: #212121;
+	color: #3d3d3d;
 	margin-bottom: 70px;
 }
 
@@ -471,7 +343,7 @@ span.white-text{
 	font-size: 1.6rem;
 	text-transform: none;
 	letter-spacing: 0;
-	color: #212121;
+	color: #202124;
   	display: inline-block;
   	position: relative;
 }
@@ -505,7 +377,7 @@ a.underline-effect:hover:after {
 	font-size: 3.3rem;
 	bottom: 30px;
 	right: 20px;
-	color: #FFFFFF !important;
+	color: #202124;
 	-webkit-animation: vertical 3s ease infinite;
 	animation: vertical 3s ease infinite;
 }
