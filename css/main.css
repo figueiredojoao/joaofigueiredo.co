@@ -13,7 +13,7 @@
 /* ===================================================================
  *  01. webfonts and iconfonts
  * ------------------------------------------------------------------- */
-@font-face {
+ @font-face {
 	font-family: 'OpenSans-Bold';
 	src: url('OpenSans-Bold.eot');
 	src: url('OpenSans-Bold.eot?#iefix') format('embedded-opentype'),
@@ -50,19 +50,13 @@ html {
 }
 }
 
-@media only screen and (max-width:359px) {
-	html {
-		font-size: 1em;
-	}
-	}
-
 html, body {
 	height: 100%;
 }
 
 body {
-	background: #fcfcfc;
-	color: #202124;
+	background: #ffffff;
+	color: #1D1B1C;
 	margin: 0;
 	padding: 0;
 }
@@ -74,7 +68,7 @@ body {
 a, a:visited {
 	color: transparent;
 	-webkit-text-stroke-width: 1px;
-	-webkit-text-stroke-color: #202124;
+	-webkit-text-stroke-color: #1D1B1C;
 	text-transform: lower;
 	white-space: nowrap;
 	background-color: transparent;
@@ -85,7 +79,7 @@ a, a:visited {
 }
 
 a:hover, a:focus {
-	color: #202124;
+	color: #1D1B1C;
 }
 
 /* ===================================================================
@@ -94,19 +88,19 @@ a:hover, a:focus {
 .home-content-tablecell h1 {
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 700;
-	font-size: 3.8em;
-	line-height: 1.2em;
-	letter-spacing: -2px;
-	margin-top: 100px;
+	font-size: 5.5em;
+	line-height: 1.1em;
+	letter-spacing: -4px;
+	margin-top: 168px;
 }
 
 .col-twelve h2 {
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 500;
-	font-size: 3.8em;
+	font-size: 4em;
 	line-height: 1.2em;
-	letter-spacing: -2px;
-	margin-top: 100px;
+	letter-spacing: -4px;
+	margin-top: 110px;
 }
 
 .home-content-tablecell .home-section-links li, .home-content-tablecell .home-section-links a {
@@ -119,18 +113,18 @@ a:hover, a:focus {
 .home-content-tablecell h1 {
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 700;
-	font-size: 3.4em;
+	font-size: 4.5em;
 	line-height: 1.2em;
-	letter-spacing: -2px;
-	margin-top: 90px;
+	letter-spacing: -4px;
+	margin-top: 125px;
 }
 
 .col-twelve h2 {
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 400;
-	font-size: 3.4em;
+	font-size: 3.5em;
 	line-height: 1.2em;
-	letter-spacing: -2px;
+	letter-spacing: -4px;
 	margin-top: 90px;
 }
 
@@ -145,9 +139,9 @@ a:hover, a:focus {
 .home-content-tablecell h1 {
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 700;
-	font-size: 3em;
+	font-size: 4em;
 	line-height: 1.2em;
-	letter-spacing: -2px;
+	letter-spacing: -3px;
 	margin-top: 80px;
 }
 	
@@ -156,14 +150,14 @@ a:hover, a:focus {
 	font-weight: 500;
 	font-size: 3em;
 	line-height: 1.2em;
-	letter-spacing: -2px;
-	margin-top: 80px;
+	letter-spacing: -3px;
+	margin-top: 70px;
 }
 
 .home-content-tablecell .home-section-links li, .home-content-tablecell .home-section-links a {
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 700;
-	margin-right: 20px;
+	margin-right: 25px;
 }
 }
 
@@ -171,19 +165,19 @@ a:hover, a:focus {
 .home-content-tablecell h1 {
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 700;
-	font-size: 2.6em;
+	font-size: 3.5em;
 	line-height: 1.2em;
 	letter-spacing: -2px;
-	margin-top: 80px;
+	margin-top: 50px;
 }
 
 .col-twelve h2 {
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 500;
-	font-size: 2.6em;
+	font-size: 2.5em;
 	line-height: 1.2em;
 	letter-spacing: -2px;
-	margin-top: 80px;
+	margin-top: 50px;
 }
 
 .home-content-tablecell .home-section-links li, .home-content-tablecell .home-section-links a {
@@ -254,7 +248,7 @@ form,
 }
 
 .animate-intro #spNU{
-	color:#202124;
+	color:#1D1B1C;
 }
 .oldie .animate-this,
 .oldie .animate-intro
@@ -316,11 +310,11 @@ form,
 
 span.white-text-intro{
 	display: block;
-	color: #202124;
+	color: #1D1B1C;
 }
 
 span.white-text{
-	color: #202124;
+	color: #1D1B1C;
 }
 
 .home-content-tablecell .home-section-links {
@@ -331,7 +325,7 @@ span.white-text{
 .home-content-tablecell .home-section-links li {
 	display: inline-block;
 	font-size: 1em;
-	color: #3d3d3d;
+	color: #1D1B1C;
 	margin-bottom: 70px;
 }
 
@@ -343,7 +337,7 @@ span.white-text{
 	font-size: 1.6rem;
 	text-transform: none;
 	letter-spacing: 0;
-	color: #202124;
+	color: #1D1B1C;
   	display: inline-block;
   	position: relative;
 }
@@ -377,7 +371,7 @@ a.underline-effect:hover:after {
 	font-size: 3.3rem;
 	bottom: 30px;
 	right: 20px;
-	color: #202124;
+	color: #1D1B1C;
 	-webkit-animation: vertical 3s ease infinite;
 	animation: vertical 3s ease infinite;
 }
